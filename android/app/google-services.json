@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "84023550602",
+    "project_id": "bc-jewlery",
+    "storage_bucket": "bc-jewlery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84023550602:android:52943912b45013b27f8373",
+        "android_client_info": {
+          "package_name": "com.example.inventory_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtWBSNa63fs1QfM-O10HzuzS9wE45fizU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
