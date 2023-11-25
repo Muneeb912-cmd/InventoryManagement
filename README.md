@@ -31,10 +31,6 @@ Monitor your business performance through a centralized dashboard with:
 - Inventory status overview.
 - Quick access to key metrics.
 
-### 5. Hashtags
-
-Utilize hashtags to categorize and search for products easily. This feature enhances organization and simplifies the retrieval of information.
-
 ## Getting Started
 
 Follow these steps to set up the Inventory Management System on your local machine:
@@ -57,6 +53,10 @@ Follow these steps to set up the Inventory Management System on your local machi
 
 4. **Access the App:**
     Open your preferred web browser and navigate to [http://localhost:3000](http://localhost:3000).
+
+5. **Initialize Firebase**
+    Don't forget to initialize your firebase in the project.
+
 
 ## Contributing
 
