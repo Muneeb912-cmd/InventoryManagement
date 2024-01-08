@@ -461,37 +461,43 @@ class _CreateSaleState extends State<CreateSale> {
                                 style: TextStyle(
                                     fontWeight: FontWeight.w700, fontSize: 18),
                               ),
-                              SizedBox(
-                                width: 20,
-                              ),
-                              Text(
-                                "Price: ",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 15,
-                                    color: Colors.black),
-                              ),
-                              Text(
-                                products![index].selling_price.toString(),
-                                style: TextStyle(
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 15,
-                                    color: Colors.black),
-                              ),
                             ],
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                          Column(
                             children: [
-                              Container(
-                                margin: EdgeInsets.only(top: 20),
-                                child: Image.network(
-                                  products![index].imageUrl,
-                                  height: 220,
-                                  width: 300,
-                                  fit: BoxFit.fill,
-                                ),
-                              )
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  Text(
+                                    "Price: ",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 15,
+                                        color: Colors.black),
+                                  ),
+                                  Text(
+                                    products![index].selling_price.toString(),
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 15,
+                                        color: Colors.black),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.only(top: 10),
+                                    child: Image.network(
+                                      products![index].imageUrl,
+                                      height: 200,
+                                      width: 270,
+                                      fit: BoxFit.fill,
+                                    ),
+                                  )
+                                ],
+                              ),
                             ],
                           ),
                           Padding(

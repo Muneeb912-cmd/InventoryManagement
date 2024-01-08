@@ -150,7 +150,9 @@ class remort_services {
         "member_id": im.id,
         "joined_on": Timestamp.now(),
         "inventory_id": inventoryID,
-        "isDeleted": 0
+        "isDeleted": 0,
+        "access":'viewer'
+
       });
       return true;
     } catch (e) {
@@ -393,4 +395,16 @@ class remort_services {
         snapshot.docs.map((e) => PurchasingModel.fromSnapshot(e)).toList();
     return data;
   }
+
+   Future<bool> changeAccess(inventoryID, memeberID,access) async {
+    final update =
+        ref.collection("Inventories").doc(inventoryID).collection('Members');
+    try {
+      update.doc(memeberID).update({"access": access}).then((value) => {});
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
 }
